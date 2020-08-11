@@ -1,0 +1,13 @@
+package sub;
+syntax = "proto3";
+ 
+message RequestMessage {
+    required string email = 1;
+    optional string id = 2;
+}
+
+message ResponseMessage {
+    required string messages = 1;
+    required bool success = 2;
+    optional string timestamp = 3;
+}
